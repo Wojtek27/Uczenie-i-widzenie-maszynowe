@@ -73,7 +73,7 @@ compressed_image_path = "panda-compressed_50.jpg"
 num_nonzero_coeffs = 50
 
 compressed_image = compress_image(original_image_path, num_nonzero_coeffs)
-cv2.imwrite(compressed_image_path, compressed_image)        ######## TUTAJ TAK SAMO KIEPSKO xD, przy num_nonzero_coeffs = ~50 jest mniejszy rozmiar
+cv2.imwrite(compressed_image_path, compressed_image)        
 
 original_image = cv2.imread(original_image_path)
 psnr = calculate_psnr(original_image, compressed_image)
