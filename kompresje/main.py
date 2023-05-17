@@ -9,7 +9,6 @@ import pywt
 #   Transformata Fouriera 2D     #
 #                                #
 ##################################
-
 def compress_image(image, quality):
     #Przygotowanie obrazu
      image = image.astype(np.float32) / 255.0
